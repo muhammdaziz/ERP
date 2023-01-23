@@ -1,8 +1,11 @@
 package com.example.erp.exceptions;
 
+import com.example.erp.payload.ErrorData;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.http.HttpStatus;
+
+import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
 @Data

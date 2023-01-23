@@ -3,15 +3,19 @@ package com.example.erp.entity;
 import com.example.erp.entity.enums.PageEnum;
 import com.example.erp.entity.enums.PermissionEnum;
 import com.example.erp.entity.utils.AbsIntegerEntity;
-import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.*;
 import java.util.Set;
 
 @Entity
 @Setter
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Role extends AbsIntegerEntity {
 
     @Column(nullable = false, unique = true)
